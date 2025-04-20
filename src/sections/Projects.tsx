@@ -13,11 +13,21 @@ const portfolioProjects = [
     company: "Ziska IDE",
     year: "2024",
     title: "Online SaaS Code Editor",
-    description: "Developed a cloud-based code editor with advanced features for seamless code writing, sharing, and execution.",
+    description:
+      "Developed a cloud-based code editor with advanced features for seamless code writing, sharing, and execution.",
     results: [
-      { title: "Implemented advanced Next.js features for enhanced performance and scalability" },
-      { title: "Integrated third-party authentication using Clerk for secure user management" },
-      { title: "Designed and developed a scalable, user-friendly interface for seamless interaction" },
+      {
+        title:
+          "Implemented advanced Next.js features for enhanced performance and scalability",
+      },
+      {
+        title:
+          "Integrated third-party authentication using Clerk for secure user management",
+      },
+      {
+        title:
+          "Designed and developed a scalable, user-friendly interface for seamless interaction",
+      },
     ],
     Link: "#",
     image: promptShareImage,
@@ -26,15 +36,21 @@ const portfolioProjects = [
     company: "Hospital Management System",
     year: "2025",
     title: "Real-Time Hospital Management System",
-    description: "Developed a real-time hospital management system for efficient patient, staff, and resource management. Designed to be scalable, user-friendly, and provide real-time data for improved healthcare services.",
+    description:
+      "Developed a real-time hospital management system for efficient patient, staff, and resource management. Designed to be scalable, user-friendly, and provide real-time data for improved healthcare services.",
     results: [
-      { title: "Developed a real-time management system for hospital operations" },
+      {
+        title:
+          "Developed a real-time management system for hospital operations",
+      },
       { title: "Built a scalable and robust application to handle high loads" },
-      { title: "Enhanced the user experience with a seamless and intuitive UI" },
+      {
+        title: "Enhanced the user experience with a seamless and intuitive UI",
+      },
     ],
     link: "",
     image: aiStartupLandingPage,
-  }  
+  },
   // if more projects, just add them here
 ];
 
@@ -54,7 +70,7 @@ export const ProjectsSection = () => {
         <p className="text-center md:text-lg max-w-md mx-auto text-white/60 mt-4 lg:text-xl">
           A collection of my projects, showcasing my skills.
         </p>
-        <div className="flex flex-col mt-10 md:mt-20 gap-20">
+        {/*<div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <div
               key={project.title}
@@ -118,7 +134,11 @@ export const ProjectsSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div>*/}
+        <br />
+        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-rose-300 to-sky-400 text-transparent bg-clip-text text-center text-3xl">
+          Coming Soon
+        </h3>
       </div>
     </section>
   );
