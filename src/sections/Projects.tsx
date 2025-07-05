@@ -1,6 +1,4 @@
-import promptShareImage from "@/assets/images/book-cover.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import hospitalLandingPage from "@/assets/images/hospital-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -10,47 +8,33 @@ import { Result } from "postcss";
 
 const portfolioProjects = [
   {
-    company: "Ziska IDE",
-    year: "2024",
-    title: "Online SaaS Code Editor",
-    description:
-      "Developed a cloud-based code editor with advanced features for seamless code writing, sharing, and execution.",
-    results: [
-      {
-        title:
-          "Implemented advanced Next.js features for enhanced performance and scalability",
-      },
-      {
-        title:
-          "Integrated third-party authentication using Clerk for secure user management",
-      },
-      {
-        title:
-          "Designed and developed a scalable, user-friendly interface for seamless interaction",
-      },
-    ],
-    Link: "#",
-    image: promptShareImage,
-  },
-  {
-    company: "Hospital Management System",
-    year: "2025",
-    title: "Real-Time Hospital Management System",
-    description:
-      "Developed a real-time hospital management system for efficient patient, staff, and resource management. Designed to be scalable, user-friendly, and provide real-time data for improved healthcare services.",
-    results: [
-      {
-        title:
-          "Developed a real-time management system for hospital operations",
-      },
-      { title: "Built a scalable and robust application to handle high loads" },
-      {
-        title: "Enhanced the user experience with a seamless and intuitive UI",
-      },
-    ],
-    link: "",
-    image: aiStartupLandingPage,
-  },
+  company: "Medtek-Hospital Appointment System",
+  year: "2025",
+  title: "Hospital Management System",
+  description:
+    "Architected and deployed a robust real-time hospital system to modernize appointments, and logistics.",
+  results: [
+    {
+      title:
+        "Engineered a full-stack real-time hospital platform using Next.js and Appwrite",
+    },
+    {
+      title:
+        "Implemented secure OTP login and real-time SMS alerts via Twilio for critical workflows",
+    },
+    {
+      title:
+        "Integrated Sentry for error tracking, threat detection, and system observability",
+    },
+    {
+      title:
+        "Crafted an elegant, responsive, and intuitive UI ensuring seamless interaction for patients and hospital staff",
+    },
+  ],
+  link: "https://medtek-appointment-app.vercel.app/",
+  image: hospitalLandingPage,
+}
+
   // if more projects, just add them here
 ];
 
@@ -70,7 +54,7 @@ export const ProjectsSection = () => {
         <p className="text-center md:text-lg max-w-md mx-auto text-white/60 mt-4 lg:text-xl">
           A collection of my projects, showcasing my skills.
         </p>
-        {/*<div className="flex flex-col mt-10 md:mt-20 gap-20">
+        <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <div
               key={project.title}
@@ -134,7 +118,7 @@ export const ProjectsSection = () => {
               </div>
             </div>
           ))}
-        </div>*/}
+        </div>
         <br />
         <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-rose-300 to-sky-400 text-transparent bg-clip-text text-center text-3xl">
           Coming Soon
