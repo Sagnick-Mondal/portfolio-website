@@ -1,4 +1,5 @@
 import hospitalLandingPage from "@/assets/images/hospital-landing-page.png";
+import resumePortLandingPage from "@/assets/images/resumeport-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -8,32 +9,63 @@ import { Result } from "postcss";
 
 const portfolioProjects = [
   {
-  company: "Medtek-Hospital Appointment System",
-  year: "2025",
-  title: "Hospital Management System",
-  description:
-    "Architected and deployed a robust real-time hospital system to modernize appointments, and logistics.",
-  results: [
-    {
-      title:
-        "Engineered a full-stack real-time hospital platform using Next.js and Appwrite",
-    },
-    {
-      title:
-        "Implemented secure OTP login and real-time SMS alerts via Twilio for critical workflows",
-    },
-    {
-      title:
-        "Integrated Sentry for error tracking, threat detection, and system observability",
-    },
-    {
-      title:
-        "Crafted an elegant, responsive, and intuitive UI ensuring seamless interaction for patients and hospital staff",
-    },
-  ],
-  link: "https://medtek-appointment-app.vercel.app/",
-  image: hospitalLandingPage,
-}
+    company: "Medtek-Hospital Appointment System",
+    year: "2025",
+    title: "Hospital Management System",
+    description:
+      "Architected and deployed a robust real-time hospital system to modernize appointments, and logistics.",
+    results: [
+      {
+        title:
+          "Engineered a full-stack real-time hospital platform using Next.js and Appwrite",
+      },
+      {
+        title:
+          "Implemented secure OTP login and real-time SMS alerts via Twilio for critical workflows",
+      },
+      {
+        title:
+          "Integrated Sentry for error tracking, threat detection, and system observability",
+      },
+      {
+        title:
+          "Crafted an elegant, responsive, and intuitive UI ensuring seamless interaction for patients and hospital staff",
+      },
+    ],
+    link: "https://medtek-appointment-app.vercel.app/",
+    image: hospitalLandingPage,
+  },
+  {
+    company: "ResumePort - AI Resume Analyzer",
+    year: "2025",
+    title: "AI-Powered Resume Analysis Platform",
+    description:
+      "Developed an AI-enhanced platform that intelligently scans, evaluates, and improves resumes using GPT and DALL·E, combined with secure cloud features via Puter.js.",
+    results: [
+      {
+        title:
+          "Built a fully responsive resume analysis app using React, TypeScript, and React Router",
+      },
+      {
+        title:
+          "Leveraged GPT for ATS-based scoring and personalized resume improvement suggestions",
+      },
+      {
+        title:
+          "Used DALL·E for creative enhancement mockups and layout insights",
+      },
+      {
+        title:
+          "Integrated Puter.js for free cloud storage and third-party authentication",
+      },
+      {
+        title:
+          "Enabled seamless navigation, data deletion, and secure file management with high efficiency",
+      },
+    ],
+    link: "https://resumeport-blush.vercel.app/",
+    image: resumePortLandingPage,
+  },
 
   // if more projects, just add them here
 ];
@@ -76,11 +108,12 @@ export const ProjectsSection = () => {
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
+                  <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5 ">
                     {project.title}
                   </h3>
                   <p className="flex gap-2 text-sm md:text-base text-white/50 items-center max-w-full whitespace-nowrap overflow-hidden text-ellipsis">
-                  {project.description}</p>
+                    {project.description}
+                  </p>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.length > 0 ? (
@@ -120,9 +153,9 @@ export const ProjectsSection = () => {
           ))}
         </div>
         <br />
-        <h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-rose-300 to-sky-400 text-transparent bg-clip-text text-center text-3xl">
+        {/*<h3 className="uppercase font-semibold tracking-widest bg-gradient-to-r from-rose-300 to-sky-400 text-transparent bg-clip-text text-center text-3xl">
           Coming Soon
-        </h3>
+        </h3>*/}
       </div>
     </section>
   );

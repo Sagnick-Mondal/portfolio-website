@@ -129,8 +129,8 @@ export const HeroSection = () => {
         <div className="flex items-center flex-col">
           <div className="relative w-[200px] h-[200px] rounded-full mx-auto">
             {/* Glowing effect */}
-            <div className="loader" />
-            
+            <div className="absolute inset-0 rounded-full bg-rose-400 opacity-40 blur-2xl animate-pulse -z-10"></div>
+
             {/* profile image */}
             <Image
               src={profileImage}
@@ -141,9 +141,9 @@ export const HeroSection = () => {
               style={{ objectFit: "cover" }}
             />
           </div>
-          </div>
-          <div className="flex items-center flex-col">
-            <br />
+        </div>
+        <div className="flex items-center flex-col">
+          <br />
           {/* the bar right under image */}
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-3xl">
             <div className="bg-green-500 rounded-full size-2.5 relative">
@@ -153,14 +153,17 @@ export const HeroSection = () => {
               Available to join your team
             </div>
           </div>
-          </div>
+        </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Transforming Vision into <span className="text-yellow-400">Digital Reality</span>
+            Transforming Vision into{" "}
+            <span className="text-yellow-400">Digital Reality</span>
           </h1>
           <p className="text-center mt-4 text-white/60 md:text-lg">
             From design to deployment — I build performant, scalable
-            applications with a focus on <span className="text-sky-400">user experience</span> and <span className="text-rose-400">code quality</span>
+            applications with a focus on{" "}
+            <span className="text-sky-400">user experience</span> and{" "}
+            <span className="text-rose-400">code quality</span>
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
